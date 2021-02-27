@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+// 组件
+import Header from './pages/nav/nav'
+import Donwload from './pages/main/Donwload/index'
+import Features from './pages/main/Features/index'
+import Docs from './pages/main/Docs/index'
+import Technical from './pages/main/Technical/index'
+import Footer from './pages/footer/index'
+
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// css
+
+import './index.css'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Header />
+    <Donwload />
+    <Features />
+    <Docs />
+    <Technical />
+    <Footer />
+  </div>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
